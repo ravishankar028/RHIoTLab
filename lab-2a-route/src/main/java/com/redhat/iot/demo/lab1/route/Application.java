@@ -35,7 +35,12 @@ public class Application extends RouteBuilder {
                 .marshal().json(JsonLibrary.Jackson)
                 .setHeader(Exchange.HTTP_METHOD,constant("POST"))
                 .setHeader(Exchange.CONTENT_TYPE,constant("application/json"))
-
+                .unmarshal(csv)
+                .delay(1000)
+                .process(new CsvProcess())
+                .marshal().json(JsonLibrary.Jackson)
+                .setHeader(Exchange.HTTP_METHOD,constant("POST"))
+                .setHeader(Exchange.CONTENT_TYPE,constant("application/json"))
                 .to("http://lab-2a-web:8080/iot")
                 .log("${body}");
     }
