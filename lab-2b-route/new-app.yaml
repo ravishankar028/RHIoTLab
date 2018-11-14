@@ -5,15 +5,15 @@ items:
   kind: ImageStream
   metadata:
     labels:
-      app: lab-2b-route
-    name: lab-2b-route
+      app: lab-2b-route-new
+    name: lab-2b-route-new
 - apiVersion: build.openshift.io/v1
   kind: BuildConfig
   metadata:
     annotations:
     labels:
-      app: lab-2b-route
-    name: lab-2b-route
+      app: lab-2b-route-new
+    name: lab-2b-route-new
   spec:
     nodeSelector: null
     output:
@@ -77,7 +77,7 @@ items:
       targetPort: 8081-tcp
     to:
       kind: Service
-      name: lab-2b-route
+      name: lab-2b-route-new
       weight: 100
     wildcardPolicy: None
 
