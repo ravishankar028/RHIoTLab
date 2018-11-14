@@ -116,97 +116,97 @@ items:
               valueFrom:
                 configMapKeyRef:
                   key: esf.hostname
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: ESF_PASSWORD
               valueFrom:
                 configMapKeyRef:
                   key: esf.password
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: ESF_PORT
               valueFrom:
                 configMapKeyRef:
                   key: esf.port
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: ESF_USERNAME
               valueFrom:
                 configMapKeyRef:
                   key: esf.username
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MARIADB_DATABASE
               valueFrom:
                 configMapKeyRef:
                   key: mariadb.database
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MARIADB_PASSWORD
               valueFrom:
                 configMapKeyRef:
                   key: mariadb.password
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MARIADB_PORT
               valueFrom:
                 configMapKeyRef:
                   key: mariadb.port
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MARIADB_SERVICE
               valueFrom:
                 configMapKeyRef:
                   key: mariadb.service
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MARIADB_USERNAME
               valueFrom:
                 configMapKeyRef:
                   key: mariadb.username
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_HOSTNAME
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.hostname
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_MACHINE_TOPIC
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.machine.topic
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_PASSWORD
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.password
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_PAYLOAD_TOPIC
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.payload.topic
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_PORT
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.port
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_USER_PASSWORD
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.user.password
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_USER_USERNAME
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.user.username
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_USERNAME
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.username
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_WEBSOCKET
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.websocket
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             - name: MQTT_WEBSOCKET_PORT
               valueFrom:
                 configMapKeyRef:
                   key: mqtt.websocket.port
-                  name: iotdemo-config-map
+                  name: iotdemo-config-map-ravi
             image:
             imagePullPolicy: Always
             name: lab-2b-route
